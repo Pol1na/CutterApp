@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('main.urls')),
     path('mp3/', include('mp3cutter.urls')),
     path('image/', include('image_converter.urls')),
 ]
