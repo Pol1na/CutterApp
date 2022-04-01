@@ -20,10 +20,9 @@
             <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
                 <div class="features">
                     <div class="header mb-3">
-                        <!--<span class="mai-business"></span> -->
-                        <img class="circle-image" src="{% static 'img/imageconv.png' %}" alt="Image Converter">
+                        <a href="{% url 'image' %}"><img class="circle-image" src="{% static 'img/imageconv.png' %}" alt="Image Converter"></a>
                     </div>
-                    <h5>Image converter</h5>
+                    <a href="{% url 'image' %}"><h5>Image converter</h5></a>
                     <p>Конвертирование изображений</p>
                 </div>
             </div>
