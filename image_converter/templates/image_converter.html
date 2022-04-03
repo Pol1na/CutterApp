@@ -13,6 +13,18 @@
                         <div class="fallback">
                             <input name="file" type="file" multiple/>
                         </div>
+
+                    </form>
+                    <form action="convert" method="POST">
+                        {% csrf_token %}
+                        <select name="formats">
+                            <option>JPEG</option>
+                            <option>JPG</option>
+                            <option>PNG</option>
+                            <option>ICO</option>
+                        </select>
+                        <a class="btn btn-primary ml-lg-2" href="#">Сконвертировать</a>
+
                     </form>
                 </div>
             </div>
